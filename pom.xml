@@ -6,7 +6,7 @@
 
     <groupId>com.lazydsr</groupId>
     <artifactId>lazydsr-commons</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
 
     <name>lazydsr-commons</name>
     <description>lazydsr-commons</description>
@@ -25,9 +25,9 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:git:git@github.com:lazydsr/lazydsr-utils.git</connection>
-        <developerConnection>scm:git:git@github.com:lazydsr/lazydsr-utils.git</developerConnection>
-        <url>git@github.com:lazydsr/lazydsr-utils.git</url>
+        <connection>scm:git:git@github.com:lazydsr/lazydsr-commons.git</connection>
+        <developerConnection>scm:git:git@github.com:lazydsr/lazydsr-commons.git</developerConnection>
+        <url>git@github.com:lazydsr/lazydsr-commons.git</url>
     </scm>
     <!--发布jar到中央仓库-->
     <distributionManagement>
@@ -50,12 +50,6 @@
     </properties>
 
     <dependencies>
-        <!--<dependency>-->
-        <!--<groupId>commons-logging</groupId>-->
-        <!--<artifactId>commons-logging</artifactId>-->
-        <!--<version>${commons-logging.version}</version>-->
-        <!--</dependency>-->
-
         <!-- 日志文件管理包 -->
         <!-- log start -->
         <dependency>
@@ -63,10 +57,6 @@
             <artifactId>log4j-core</artifactId>
             <version>${log4j2.version}</version>
         </dependency>
-        <!--<dependency>-->
-        <!--<groupId>org.slf4j</groupId>-->
-        <!--<artifactId>slf4j-api</artifactId>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>com.lazydsr</groupId>
             <artifactId>lazydsr-utils</artifactId>
@@ -82,7 +72,7 @@
     </dependencies>
 
     <build>
-        <finalName>${project.artifactId}</finalName>
+        <finalName>${project.artifactId}-${project.version}</finalName>
         <plugins>
             <!-- 资源文件拷贝插件 -->
             <plugin>
