@@ -3,6 +3,7 @@ package com.lazydsr.commons.result;
 import com.lazydsr.util.time.UtilDateTime;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * Coding......
@@ -49,7 +50,7 @@ public class ResultBody implements Serializable {
      * 时间
      * 默认异常的捕获时间
      */
-    private String datetime;
+    private String datetime=new Date().getTime()+"";
 
 
     public static ResultBody success() {
