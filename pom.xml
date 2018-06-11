@@ -6,7 +6,7 @@
 
     <groupId>com.lazydsr</groupId>
     <artifactId>lazydsr-commons</artifactId>
-    <version>1.1.2</version>
+    <version>1.1.4</version>
 
     <name>lazydsr-commons</name>
     <description>lazydsr-commons</description>
@@ -45,7 +45,7 @@
     <properties>
         <log4j.version>1.2.17</log4j.version>
         <log4j2.version>2.7</log4j2.version>
-        <lazydsr-utils.version>1.1.4</lazydsr-utils.version>
+        <lazydsr-utils.version>1.1.5</lazydsr-utils.version>
         <junit.version>4.12</junit.version>
     </properties>
 
